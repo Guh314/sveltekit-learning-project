@@ -3,5 +3,5 @@
 </script>
 
 <main class="flex flex-col">
-    <Hero/>
+    <Hero />
 </main>

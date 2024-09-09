@@ -4,5 +4,5 @@
 </script>
 
 <SectionWrapper>
-    <Header/>
+    <Header />
 </SectionWrapper>
