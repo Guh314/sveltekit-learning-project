@@ -13,8 +13,23 @@
 )}>
     <div class="flex relative">
         <div class={"absolute rounded-full bg-white aspect-squared hidden md:grid place-items-center h-4 top-0 " + index % 2 === 0 ? "right-0 -mr-8 transalte-x-1/2" : "left-0 -ml-8 -transalte-x-1/2"}>
-            <div class="rounded-full bg-slate-950 aspect-square bg-slate-950 h-2"></div>
+            <div class="rounded-full bg-slate-950 aspect-square bg-slate-950 h-2" />
         </div>
-        <div class=""></div>
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-user" />
+            <h3 class="text-lg sm:text-xl md:text-2xl">
+                {reviewItem.name}
+            </h3>
+        </div>
     </div>
+    <div class="h-[1.5px] bg-slate-950 w-1/4 mr-auto mb-auto mb-4 mt-2">
+    </div>
+    <div class="flex items-center flex-wrap gap-2 text-xs sm:text-sm mb-4">
+        {#each reviewItem.features as keyword}
+            <div class="p-1 py-0.5 rounded-md border border-solid border indigo-400 bg-indigo-50 text-indigo-400">
+                <p>{keyword}</p>
+            </div>
+        {/each}
+    </div>
+    <p>{reviewItem.review}</p>
 </div>
